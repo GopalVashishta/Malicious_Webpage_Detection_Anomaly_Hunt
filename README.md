@@ -9,7 +9,6 @@ Compares phishing vs legitimate URL datasets, performs exploratory analysis, and
 ## Project Structure
 - eda.ipynb — dataset profiling, parsing, scheme/TLD statistics, quality checks
 - anomaly_detection.ipynb — feature engineering and anomaly detectors
-- analysis_notes.md — rationale for main design choices and glossary
 - anomaly_top.csv — top-ranked anomalies sampled by the notebook
 - trained_models/anomaly_models.joblib — saved scaler + models (IsolationForest, LOF, LOF novelty), feature list
 
