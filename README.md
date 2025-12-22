@@ -13,7 +13,7 @@ Compares phishing vs legitimate URL datasets, performs exploratory analysis, and
 - trained_models/anomaly_models.joblib — saved scaler + models (IsolationForest, LOF, LOF novelty), feature list
 
 ## Environment
-Python 3.12 with pandas, numpy, scikit-learn, joblib. Notebooks already configured for this env.
+Python 3.12 with pandas, numpy, scikit-learn, tensorflow, matplotlib, seaborn, shap, tqdm and joblib. Notebooks already configured for this env.
 
 ## Workflow
 1. Run eda.ipynb cells sequentially to inspect data quality and distribution differences.
