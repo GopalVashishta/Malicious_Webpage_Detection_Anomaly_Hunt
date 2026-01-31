@@ -5,7 +5,7 @@ Compares phishing vs legitimate URL datasets, performs exploratory analysis, and
 ## Dataset
 **Dataset Link:** https://data.mendeley.com/datasets/vfszbj9b36/1
 - Phishing URLs.csv — labeled phishing URLs
-- URL dataset.csv — labeled legitimate URLs
+- URL dataset.csv — labeled legitimate+phishing URLs
 
 ## Project Structure
 - eda.ipynb — dataset profiling, parsing, scheme/TLD statistics, quality checks
