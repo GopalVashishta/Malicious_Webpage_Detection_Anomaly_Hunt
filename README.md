@@ -3,6 +3,7 @@
 Compares phishing vs legitimate URL datasets, performs exploratory analysis, and runs unsupervised anomaly detection with IsolationForest and LocalOutlierFactor.
 
 ## Dataset
+**Dataset Link:** https://data.mendeley.com/datasets/vfszbj9b36/1
 - Phishing URLs.csv — labeled phishing URLs
 - URL dataset.csv — labeled legitimate URLs
 
