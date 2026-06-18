@@ -1,0 +1,14 @@
+Icon files needed:
+- icon16.png (16x16 pixels)
+- icon48.png (48x48 pixels)  
+- icon128.png (128x128 pixels)
+
+You can create these icons or download free ones from:
+- https://icons8.com
+- https://flaticon.com
+- https://iconmonstr.com
+
+Recommended: Use a shield or magnifying glass icon to represent security scanning.
+
+Quick option: Create simple colored squares with text using any image editor,
+or use the generate_icons.py script in this folder.

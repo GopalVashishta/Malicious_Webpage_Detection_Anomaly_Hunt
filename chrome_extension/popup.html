@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Anomaly Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 URL Detector</h1>
+      <p class="subtitle">ML-Powered Phishing Detection</p>
+    </header>
+
+    <div class="status-bar" id="serverStatus">
+      <span class="status-dot"></span>
+      <span class="status-text">Checking server...</span>
+    </div>
+
+    <div class="current-url-section">
+      <label>Current Page URL:</label>
+      <div class="url-display" id="currentUrl">Loading...</div>
+      <button class="btn btn-primary" id="analyzeCurrentBtn">
+        Analyze Current Page
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="manual-section">
+      <label for="manualUrl">Or enter URL manually:</label>
+      <input type="text" id="manualUrl" placeholder="https://example.com/page">
+      <button class="btn btn-secondary" id="analyzeManualBtn">
+        Analyze URL
+      </button>
+    </div>
+
+    <div class="results-section" id="resultsSection" style="display: none;">
+      <h2>Analysis Results</h2>
+      
+      <div class="risk-meter" id="riskMeter">
+        <div class="risk-fill" id="riskFill"></div>
+        <span class="risk-label" id="riskLabel">--</span>
+      </div>
+
+      <div class="verdict" id="verdict">
+        <span class="verdict-icon"></span>
+        <span class="verdict-text"></span>
+      </div>
+
+      <div class="scores-grid" id="scoresGrid">
+        <!-- Scores will be populated by JS -->
+      </div>
+
+      <div class="features-section" id="featuresSection">
+        <h3>Key Features Detected:</h3>
+        <ul id="featuresList"></ul>
+      </div>
+    </div>
+
+    <div class="error-section" id="errorSection" style="display: none;">
+      <p class="error-text" id="errorText"></p>
+    </div>
+
+    <footer>
+      <p>Powered by Autoencoder + IsolationForest + LOF + SVM</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
